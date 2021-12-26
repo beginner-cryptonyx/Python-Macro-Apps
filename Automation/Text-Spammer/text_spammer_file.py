@@ -4,7 +4,7 @@ import termcolor
 
 
 class spammer():
-    def __init__(self, path="Text-Spammer/file.txt"):
+    def __init__(self, path="C:\\Users\\mayan\\Desktop\\Programing\\Python\\Python-Macro-Apps\\Text-Spammer\\file.txt"):
 
         if os.path.exists(path):
             self.path = path

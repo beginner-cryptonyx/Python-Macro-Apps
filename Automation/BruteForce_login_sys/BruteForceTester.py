@@ -1,14 +1,16 @@
+# imports
 import termcolor
 
-passwords_tried = []
+passwords_tried = [] # list to store all failed passwords
 password = ''
-count = 0
+count = 0 # keeps track of how many failed attempts
 print("Enter Password")
 
-while password != "admin":
+# The password is admin
+while password != "admin": # if password is incorrect
     password = input()
     count += 1
-    if password == "admin":
+    if password == "admin": # if password is correct
         for Password in passwords_tried:
             print(Password)
         

@@ -1,11 +1,16 @@
+# imports 
 import pyautogui
 import win32clipboard
 
+# defining class
 class spammer():
+    # initating class
     def __init__(self, text="", count=1):
         self.count = count
 
-        if text == "":
+        if text == "": # checking the value of text
+
+            # copying the clipboard
             win32clipboard.OpenClipboard()
             self.text = win32clipboard.GetClipboardData()
             win32clipboard.CloseClipboard()

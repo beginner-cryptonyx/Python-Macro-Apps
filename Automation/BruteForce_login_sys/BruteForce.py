@@ -1,10 +1,15 @@
+# Imports
 import pyautogui
 import time
 
+# defining class
 class MacroBruteForce():
+
+    #initiating the class
     def __init__(self, path):
         self.path = path
-            
+    
+    # Basic pyautogui commands to repeat the command
     def BruteForceNormal(self):
         with open(self.path, 'r') as file:
             for line in file:
